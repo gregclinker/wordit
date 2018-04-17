@@ -14,12 +14,13 @@ import org.springframework.stereotype.Service;
 
 /**
  * Underlying service reads static word data once at startup.
+ * 
  * @author greg
  *
  */
 @Service
 public class WorditService {
-	
+
 	private Map<String, List<String>> index = new HashMap<>();
 
 	@PostConstruct
@@ -33,22 +34,24 @@ public class WorditService {
 
 		// add the words to the index by sorted text
 		for (Word word : words) {
-			if (index.get(word.getSortedText())==null) {
+			if (index.get(word.getSortedText()) == null) {
 				index.put(word.getSortedText(), new ArrayList<>());
 			}
 			index.get(word.getSortedText()).add(word.getText());
 		}
-		
+
 	}
-	
+
 	/**
 	 * Lookup a match from the index by the alpha numerically sorted string
+	 * 
 	 * @param text
 	 * @return
 	 */
 	public WordMatch getMatch(String text) {
-		if (index.get(new Word(text).getSortedText()) != null) {
-			return new WordMatch(text, index.get(new Word(text).getSortedText()));
+		String sortedText = new Word(text).getSortedText();
+		if (index.get(sortedText) != null) {
+			return new WordMatch(text, index.get(sortedText));
 		}
 		return new WordMatch(text, new ArrayList<>());
 	}

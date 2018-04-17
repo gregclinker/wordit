@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 /**
  * Wraps the basic service
+ * 
  * @author greg
  *
  */
@@ -21,6 +22,7 @@ public class Controller {
 
 	/**
 	 * Splits words and creates a list of matches
+	 * 
 	 * @param words
 	 * @return
 	 */

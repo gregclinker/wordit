@@ -6,7 +6,7 @@ public class Word {
 
 	private String text;
 	private String sortedText;
-	
+
 	public Word(String text) {
 		this.text = text;
 		char[] charArray = text.toCharArray();

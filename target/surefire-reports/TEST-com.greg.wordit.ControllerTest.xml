@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.greg.wordit.ControllerTest" time="0.127" tests="3" errors="0" skipped="0" failures="0">
+<testsuite name="com.greg.wordit.ControllerTest" time="0.117" tests="3" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.runtime.name" value="Java(TM) SE Runtime Environment"/>
     <property name="sun.boot.library.path" value="/usr/lib/jvm/java-8-oracle/jre/lib/amd64"/>
     <property name="java.vm.version" value="25.161-b12"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
-    <property name="maven.multiModuleProjectDirectory" value="/tmp/wordit"/>
+    <property name="maven.multiModuleProjectDirectory" value="/home/greg/work/wordit"/>
     <property name="java.vendor.url" value="http://java.oracle.com/"/>
     <property name="path.separator" value=":"/>
     <property name="guice.disable.misplaced.annotation.check" value="true"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="sun.os.patch.level" value="unknown"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
-    <property name="user.dir" value="/tmp/wordit"/>
+    <property name="user.dir" value="/home/greg/work/wordit"/>
     <property name="java.runtime.version" value="1.8.0_161-b12"/>
     <property name="java.awt.graphicsenv" value="sun.awt.X11GraphicsEnvironment"/>
     <property name="java.endorsed.dirs" value="/usr/lib/jvm/java-8-oracle/jre/lib/endorsed"/>
@@ -59,7 +59,7 @@
     <property name="sun.desktop" value="gnome"/>
     <property name="sun.cpu.isalist" value=""/>
   </properties>
-  <testcase name="match1" classname="com.greg.wordit.ControllerTest" time="0.113"/>
-  <testcase name="match2" classname="com.greg.wordit.ControllerTest" time="0.007"/>
+  <testcase name="match1" classname="com.greg.wordit.ControllerTest" time="0.101"/>
+  <testcase name="match2" classname="com.greg.wordit.ControllerTest" time="0.009"/>
   <testcase name="match3" classname="com.greg.wordit.ControllerTest" time="0.007"/>
 </testsuite>
