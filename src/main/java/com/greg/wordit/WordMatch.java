@@ -1,5 +1,6 @@
 package com.greg.wordit;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class WordMatch {
@@ -9,8 +10,8 @@ public class WordMatch {
 
 	public WordMatch(String text, List<String> matches) {
 		this.text = text;
-		this.matches = matches;
-		matches.remove(text);
+		this.matches = new ArrayList<String>(matches);
+		this.matches.remove(text);
 	}
 
 	public String getText() {

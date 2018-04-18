@@ -23,5 +23,10 @@ public class WorditServiceTest {
 		assertTrue(wordMatch.getMatches().contains("cuprites"));
 		assertTrue(wordMatch.getMatches().contains("pictures"));
 		assertTrue(wordMatch.getMatches().contains("piecrust"));
+		wordMatch = service.getMatch("pictures");
+		assertEquals(3, wordMatch.getMatches().size());
+		assertTrue(wordMatch.getMatches().contains("cuprites"));
+		assertTrue(wordMatch.getMatches().contains("crepitus"));
+		assertTrue(wordMatch.getMatches().contains("piecrust"));
 	}
 }

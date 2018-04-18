@@ -25,8 +25,8 @@ public class ControllerTest {
 	@Test
 	public void match1() throws Exception {
 		mvc.perform(MockMvcRequestBuilders.get("/crepitus").accept(MediaType.APPLICATION_JSON))
-				.andExpect(status().isOk()).andExpect(content().string(
-						equalTo("[{\"text\":\"crepitus\",\"matches\":[\"cuprites\",\"pictures\",\"piecrust\"]}]")));
+		.andExpect(status().isOk()).andExpect(content().string(
+				equalTo("[{\"text\":\"crepitus\",\"matches\":[\"cuprites\",\"pictures\",\"piecrust\"]}]")));
 	}
 
 	@Test
